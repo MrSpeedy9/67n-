@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>• 67n Is Back</title>
+        <link rel="shortcut icon" type="image/icon" href="Serendipity.png">
+        <link href="https://fonts.googleapis.com/css2?family=Mada:wght@600&family=Reem+Kufi&display=swap">
+    </head>
+    <body>
+        <div class="top">
+            <h1>67N IS BACK</h1>
+        </div>
+            <div class="people">
+                <a class="btn btn1">رودكس</a>
+                <a class="btn btn1">سبيدي</a>
+                <a class="btn btn1">ليدر</a>
+                <a class="btn btn1">بيروس</a>
+                <a class="btn btn1">عيسى</a>
+                <a class="btn btn1">أسامة</a>
+                <a class="btn btn1">أكيرا</a>
+                <a class="btn btn1">روميو</a>
+                <a class="btn btn1">ريبل</a>
+                <a class="btn btn1">مجيد</a>
+            </ul>
+        <style>
+            @import url(https://fonts.googleapis.com/css2?family=Mada:wght@600&family=Reem+Kufi&display=swap);
+            body {
+                padding: 0;
+                margin: 0;
+                background: #5e2a2a;
+                font-family: 'Mada', sans-serif;
+            }
+            .top {
+                color: white;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                font-size: 30px;
+                transform: translate(-50%, -50%);
+                transition: .5s ease-in;
+            }
+            h1 {
+                position: relative;
+                padding: 1px 4px;
+                transition: .5s;
+            }
+            h1:hover {
+                animation: animate 1s linear forwards;
+            }
+            @keyframes animate {
+                0% {
+                    border-top: 0;
+                }
+                25% {
+                    border-top: 5px solid #b45454;
+                    border-radius: 20px;
+                }
+                50% {
+                    border-top: 5px solid #b45454;
+                    border-right: 5px solid #b45454;
+                    border-radius: 20px;
+                }
+                75% {
+                    border-top: 5px solid #b45454;
+                    border-right: 5px solid #b45454;
+                    border-bottom: 5px solid #b45454;
+                    border-radius: 20px;
+                }
+                100% {
+                    border-top: 5px solid #b45454;
+                    border-right: 5px solid #b45454;
+                    border-bottom: 5px solid #b45454;
+                    border-left: 5px solid #b45454;
+                    background: #b45454;
+                    box-shadow: 0 0 20px #b45454, 0 0 40px #b45454, 0 0 80px #b45454;
+                    border-radius: 20px;
+                }
+            }
+            .people {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .btn {
+                position: relative;
+                display: block;
+                color: white;
+                font-size: 30px;
+                text-decoration: none;
+                margin: 20px 0;
+                border: 4px solid #ff7675;
+                padding: 14px 60px;
+                text-transform: uppercase;
+                overflow: hidden;
+                transition: 1s all ease;
+            }
+            .btn::before {
+                content: '';
+                background: #ff7675;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                transition: 1s all ease;
+            }
+            .btn1::before {
+                width: 100%;
+                height: 0;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            .btn1:hover::before {
+                height: 380%;
+            }
+            ::-webkit-scrollbar {
+                width: 15px;
+                background: #7e3838;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #ff7675;
+            }
+        </style>
+    </body>
+</html>
